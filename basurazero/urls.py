@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from django.conf import settings
-from apps.barrio.views import index, index_admin, login, main,cargarBarrio, cargarHora, redirectBarrio
+from apps.barrio.views import *
 
 admin.autodiscover()
 
@@ -28,5 +28,16 @@ urlpatterns = [
     url(r'^main/',main),
     url(r'^hola2/',redirectBarrio),
     url(r'^holaBarrio/',cargarBarrio),
-    url(r'^hola3/',cargarHora),
+    url(r'^hola3/',redirectHora),
+    url(r'^hora/',cargarHora),
+    url(r'^diaRedirect/',redirectDia),
+    url(r'^dia/',cargarDia),
+    url(r'^calleRedirect/',redirectCalle),
+    url(r'^cargarCalle/',cargarCalle),
+
+
+
+
+
+
 ]

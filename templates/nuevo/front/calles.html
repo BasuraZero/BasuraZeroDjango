@@ -28,12 +28,12 @@
 
 <div style= "background-color: #BDBDBD; border-radius: 5px;"class="container">
 
-<form class="form-group" method="GET" action="/cargarCalle/">
+<form class="form-group" method="POST" action="/search/">
   <br>
     <div class="form-group">
         <label class="control-label col-xs-3">Nombre de Calle:</label>
         <div class="col-xs-9">
-            <input type="text" class="form-control" placeholder="Calle" name="calle">
+            <input type="text" class="form-control" placeholder="Calle">
         </div>
     </div>
     <div class="form-group">
@@ -48,24 +48,23 @@
     <div class="form-group">
         <label class="control-label col-xs-3">Num. Min:</label>
         <div class="col-xs-9">
-            <input type="text" class="form-control" placeholder="Minimo" name="min">
+            <input type="text" class="form-control" placeholder="Minimo">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-3">Num. Max:</label>
         <div class="col-xs-9">
-            <input type="text" class="form-control" placeholder="Maximo" name="max">
+            <input type="text" class="form-control" placeholder="Maximo">
         </div>
     </div>
     <div class="form-group">
       <label class="control-label col-xs-3">Hora:</label>
-      <div class="form-group">
-      <label class="control-label col-xs-3">Seleccionar hora:</label>
-      <div class="dropdown ">
-      <select name="hora">
-          {% for hora in h %}
-            <option value="{{hora.id}}">{{hora.date}}</option>
-          {% endfor %}
+      <div class="col-xs-9">
+      <select class="form-control ">
+        <option>Hora 1</option>
+        <option>Hora 2</option>
+        <option>Hora 3</option>
+        <option>Hora 4</option>
       </select>
       </div>
     </div>

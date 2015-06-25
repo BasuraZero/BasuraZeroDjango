@@ -1,7 +1,12 @@
 <html>
 <head>
-<title>Basura Zero/admin/horario</title>
-<meta charset="utf-8">
+<title>Basura Zero/admin/barrios</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -16,36 +21,37 @@
 <br>
 <div style= "background-color: #424242; border-radius: 5px;"class="container">
   <br>
+  <div class="btn-group">
 <button type="button" class="btn btn-info">Administrador</button>
 <button type="button" class="btn btn-info">Barrio</button>
 <button type="button" class="btn btn-info">Agregar Barrio</button>
+</div>
 <br>
+
 <br>
 </div>
 <br>
 <div style= "background-color: #BDBDBD; border-radius: 5px;"class="container">
-<form method="get" action="/hora/">
-  <div class="form-group">
-        <label class="control-label col-xs-3">Ingrese Hora:</label>
+<form class="form-horizontal" >
+  <br>
+    <div class="form-group">
+        <label class="control-label col-xs-3">Nombre del Barrio:</label>
         <div class="col-xs-9">
-            <input type="time" class="form-control" placeholder="HH:MM" name= "user_time">
-            <br>
-            <br>
-              <div class="form-group">
-       <div class="col-xs-offset-3 col-xs-9">
-            <input type="submit" class="btn btn-primary" value="Agregar Horario">
-        </div>
-  
-        </div>
-             
-            </div>
+            <input type="text" class="form-control" placeholder="ingresar barrio" name="barrio">
         </div>
     </div>
-    <br>
-    <br>
+  <div class="form-group">
+    <form>
+        <div class="col-xs-offset-3 col-xs-9">
+          
 
+            <input name="Agregar Barrio" type="submit" class="btn btn-primary" value="Agregar Barrio">
+  </div>
+      
+      </form>
+
+  </div>
+  </div>
 </form>
-</div>
-
 </body>
 </html>
